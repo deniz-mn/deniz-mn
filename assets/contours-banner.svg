@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="280" viewBox="0 0 960 280" role="img" aria-labelledby="title desc">
+<title id="title">deniz-mn — Computer Engineering</title>
+<desc id="desc">Slowly shifting light across mathematical contour lines.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101e30"/><stop offset="1" stop-color="#0b1220"/></linearGradient>
+<clipPath id="clip"><rect width="960" height="280" rx="18"/></clipPath></defs>
+<style>text{font-family:'Segoe UI',Arial,sans-serif}.trace{stroke-dasharray:18 420;animation:travel 16s linear infinite}.late{animation-delay:-8s}@keyframes travel{from{stroke-dashoffset:438}to{stroke-dashoffset:0}}.breathe{animation:breathe 10s ease-in-out infinite}@keyframes breathe{0%,100%{opacity:.35}50%{opacity:.8}}@media(prefers-reduced-motion:reduce){.trace,.breathe{animation:none}}</style>
+<g clip-path="url(#clip)"><rect width="960" height="280" fill="url(#bg)"/>
+<rect x="40" y="45" width="28" height="3" rx="1.5" fill="#83c8c0"/>
+<text x="40" y="85" font-size="11" letter-spacing="2.5" fill="#9cafc6">COMPUTER ENGINEERING</text>
+<text x="38" y="150" font-size="49" font-weight="600" letter-spacing="-1.8" fill="#f1f5fc">deniz-mn</text>
+<text x="40" y="205" font-size="15" letter-spacing=".6" fill="#b6c5d9">Explore. Build. Understand.</text>
+<g fill="none" stroke="#739cae" stroke-width="1.1"><path opacity="0.220" d="M592 -15 C482 72 708 125 604 203 S580 287 657 310"/><path opacity="0.275" d="M613 -15 C503 72 729 125 625 203 S601 287 678 310"/><path opacity="0.330" d="M634 -15 C524 72 750 125 646 203 S622 287 699 310"/><path opacity="0.385" d="M655 -15 C545 72 771 125 667 203 S643 287 720 310"/><path opacity="0.440" d="M676 -15 C566 72 792 125 688 203 S664 287 741 310"/><path opacity="0.495" d="M697 -15 C587 72 813 125 709 203 S685 287 762 310"/><path opacity="0.550" d="M718 -15 C608 72 834 125 730 203 S706 287 783 310"/><path opacity="0.605" d="M739 -15 C629 72 855 125 751 203 S727 287 804 310"/></g><g class="breathe" fill="none" stroke="#a2d7cf" stroke-width="1.6"><path d="M655 -15 C545 72 771 125 667 203 S643 287 720 310"/><path d="M718 -15 C608 72 834 125 730 203 S706 287 783 310"/></g></g></svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+  <title id="title">deniz-mn | Artificial intelligence and software engineering</title>
+  <desc id="desc">A dark academic banner with a gently animated neural network connecting data, learning, and systems.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#101e30"/><stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="0.8" fill="#9eafc8" opacity="0.13"/>
+    </pattern>
+    <linearGradient id="accent"><stop stop-color="#64d8c5"/><stop offset="1" stop-color="#88aaff"/></linearGradient>
+    <style>
+      text { font-family: 'Segoe UI', Arial, sans-serif; }
+      .signal { animation: flow 7s linear infinite; stroke-dasharray: 12 240; }
+      .second { animation-delay: -3.5s; }
+      @keyframes flow { from { stroke-dashoffset: 252; } to { stroke-dashoffset: 0; } }
+      @media (prefers-reduced-motion: reduce) { .signal { animation: none; } }
+    </style>
+  </defs>
+  <rect width="960" height="300" rx="18" fill="url(#bg)"/>
+  <rect width="960" height="300" rx="18" fill="url(#grid)"/>
+  <rect x="36" y="43" width="32" height="3" rx="1.5" fill="#64d8c5"/>
+  <text x="36" y="78" fill="#96a8c0" font-size="11" letter-spacing="2.5">COMPUTER ENGINEERING</text>
+  <text x="34" y="141" fill="#f1f5fc" font-size="49" font-weight="600" letter-spacing="-1.8">deniz-mn</text>
+  <text x="36" y="183" fill="#d4dfef" font-size="18">Artificial intelligence</text>
+  <text x="36" y="209" fill="#d4dfef" font-size="18">&amp; software engineering</text>
+  <text x="36" y="265" fill="#91a4bd" font-size="12" letter-spacing="0.4">Exploring the connection between learning and building.</text>
+  <path d="M565 48V251" stroke="#29384f"/>
+  <g fill="none" stroke="#526681" stroke-width="1.3" opacity="0.65">
+    <path d="M625 100L732 75M625 100L732 145M625 100L732 215M625 190L732 75M625 190L732 145M625 190L732 215M732 75L853 110M732 75L853 180M732 145L853 110M732 145L853 180M732 215L853 110M732 215L853 180"/>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round">
+    <path class="signal" d="M625 100L732 145L853 110"/>
+    <path class="signal second" d="M625 190L732 215L853 180"/>
+  </g>
+  <g fill="#152739" stroke="#64d8c5" stroke-width="1.7">
+    <circle cx="625" cy="100" r="7"/><circle cx="625" cy="190" r="7"/>
+  </g>
+  <g fill="#1b2943" stroke="#90adf5" stroke-width="1.7">
+    <circle cx="732" cy="75" r="8"/><circle cx="732" cy="145" r="8"/><circle cx="732" cy="215" r="8"/>
+  </g>
+  <g fill="#192c3a" stroke="#a3c7dd" stroke-width="1.7">
+    <rect x="846" y="103" width="14" height="14" rx="3"/><rect x="846" y="173" width="14" height="14" rx="3"/>
+  </g>
+  <g fill="#91a4bd" font-size="10" letter-spacing="1.2" text-anchor="middle">
+    <text x="625" y="265">DATA</text><text x="732" y="265">LEARNING</text><text x="853" y="265">SYSTEMS</text>
+  </g>
+</svg>

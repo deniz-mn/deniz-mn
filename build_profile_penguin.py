@@ -1,0 +1,84 @@
+from pathlib import Path
+import xml.etree.ElementTree as ET
+
+root=Path(__file__).parent
+svg='''<svg xmlns="http://www.w3.org/2000/svg" width="960" height="300" viewBox="0 0 960 300" role="img" aria-labelledby="title desc">
+<title id="title">deniz-mn — Keep exploring</title>
+<desc id="desc">A side-profile grey penguin with a white face, black cap, red scarf and small backpack walks to the right on a flat icy surface. The background is white.</desc>
+<defs>
+<linearGradient id="down" x1="0" y1="0" x2="1" y2=".6"><stop stop-color="#aeb7c1"/><stop offset=".5" stop-color="#8793a2"/><stop offset="1" stop-color="#667383"/></linearGradient>
+<linearGradient id="belly" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e1e6e9"/><stop offset="1" stop-color="#adb8c3"/></linearGradient>
+<linearGradient id="flipper" x2="1" y2="1"><stop stop-color="#909caa"/><stop offset="1" stop-color="#586777"/></linearGradient>
+<linearGradient id="ice" x2="0" y2="1"><stop stop-color="#f0f5f8"/><stop offset="1" stop-color="#fff"/></linearGradient>
+<linearGradient id="fade"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient>
+<clipPath id="scene"><rect x="510" y="20" width="435" height="253"/></clipPath>
+</defs>
+<style>
+text{font-family:'Segoe UI',Arial,sans-serif}.body{animation:bob .8s ease-in-out infinite}.nearFoot{animation:step 1.6s linear infinite}.farFoot{animation:step 1.6s linear -.8s infinite}.wing{transform-origin:743px 154px;animation:swing 1.6s ease-in-out infinite}.scarf{transform-origin:747px 130px;animation:scarf 1.9s ease-in-out infinite}.eye{transform-box:fill-box;transform-origin:center;animation:blink 5.3s infinite}.marks{animation:scroll 3.2s linear infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2)}}
+@keyframes step{0%{transform:translate(10px,0)}45%{transform:translate(-10px,0)}65%{transform:translate(-6px,-6px)}85%{transform:translate(8px,-4px)}100%{transform:translate(10px,0)}}
+@keyframes swing{0%,100%{transform:rotate(-9deg)}50%{transform:rotate(10deg)}}@keyframes scarf{50%{transform:rotate(5deg)}}@keyframes blink{0%,45%,49%,100%{transform:scaleY(1)}47%{transform:scaleY(.08)}}@keyframes scroll{to{transform:translateX(-160px)}}
+@media(prefers-reduced-motion:reduce){.body,.nearFoot,.farFoot,.wing,.scarf,.eye,.marks{animation:none}}
+</style>
+<rect width="960" height="300" fill="#fff"/>
+<path d="M40 45H69" stroke="#c95257" stroke-width="3" stroke-linecap="round"/>
+<text x="40" y="83" fill="#747d86" font-size="11" letter-spacing="2.2">COMPUTER ENGINEERING</text>
+<text x="38" y="149" fill="#303b47" font-size="49" font-weight="600" letter-spacing="-1.6">deniz-mn</text>
+<text x="40" y="191" fill="#707c87" font-size="16">Learning, one step at a time.</text>
+<text x="40" y="234" fill="#8c959d" font-size="11" letter-spacing="1.6">UNDERGRADUATE · SEMESTER 7</text>
+<g clip-path="url(#scene)">
+<path d="M510 242H945V273H510Z" fill="url(#ice)"/>
+<path d="M510 242H945" stroke="#d9e3e9" stroke-width="1.5"/>
+<g class="marks" stroke="#dfe8ed" stroke-width="1.4" stroke-linecap="round">MARKS</g>
+<ellipse cx="752" cy="244" rx="58" ry="5" fill="#becbd6" opacity=".25"/>
+<path class="farFoot" d="M724 228Q714 229 715 239Q729 245 744 239L741 230Z" fill="#404d5d"/>
+<g class="body">
+<!-- A small backpack preserves the student cue without changing the silhouette. -->
+<path d="M710 143Q690 140 688 158L685 187Q687 201 704 200L716 185Z" fill="#829a9c"/>
+<path d="M694 148Q693 138 702 140" stroke="#697f83" stroke-width="3" fill="none"/>
+<path d="M689 177Q699 173 705 181L702 192Q691 194 689 188Z" fill="#a1b4b3"/>
+<!-- Rounded grey down, pear-shaped like the reference. -->
+<path d="M720 127C705 136 698 165 699 191C699 216 710 232 738 236C771 241 790 226 792 201C793 179 781 159 777 139L768 119Z" fill="url(#down)"/>
+<path d="M765 130C777 145 776 158 784 177C796 207 781 231 760 234C771 210 761 191 759 172L748 143Z" fill="url(#belly)"/>
+<!-- Side profile: one visible eye, right-facing beak and white cheek. -->
+<path d="M716 108C716 84 725 70 744 70C765 69 778 85 778 108C779 126 770 141 749 143C728 143 716 130 716 108Z" fill="#29333d"/>
+<path d="M738 92C742 81 757 80 765 88C773 96 769 103 773 110C779 120 773 132 762 136C750 141 735 137 731 128C724 115 732 107 734 101C735 97 736 94 738 92Z" fill="#f1f3f1"/>
+<path d="M768 105Q781 104 790 113Q781 119 767 117Q765 110 768 105Z" fill="#35414c"/>
+<path d="M773 114H786" stroke="#64707a" stroke-width="1"/>
+<ellipse class="eye" cx="758" cy="101" rx="3.1" ry="4" fill="#253440"/><circle cx="759" cy="100" r="1" fill="white"/>
+<path d="M751 93Q756 90 761 93" stroke="#c1cbd1" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<!-- Red wool scarf and trailing end. -->
+<path class="scarf" d="M741 132Q725 131 714 121L696 120Q711 141 739 143Z" fill="#dc555c"/>
+<path d="M719 129Q748 141 776 128L779 139Q751 153 717 140Z" fill="#be3f4c"/>
+<path d="M749 141L755 169L766 167L760 140Z" fill="#d6505a"/>
+<path d="M757 165L758 170M761 164L762 169M765 163L766 168" stroke="#bb3a49" stroke-width="1.3"/>
+<path d="M718 148Q723 168 714 185" stroke="#aec0be" stroke-width="3" fill="none"/>
+<!-- Long tapered flipper follows the reference anatomy. -->
+<path class="wing" d="M745 150C733 150 726 162 718 176C709 192 711 200 717 196C735 185 751 169 753 159Q754 153 745 150Z" fill="url(#flipper)"/>
+<path d="M707 200L710 210M714 217L719 225M728 224L731 230M747 226L749 231" stroke="#b0bbc5" stroke-width="1.2" opacity=".35" stroke-linecap="round"/>
+</g>
+<path class="nearFoot" d="M751 231Q749 237 751 240Q766 244 783 240Q787 238 778 235L768 230Z" fill="#354452"/>
+<rect x="510" y="20" width="35" height="253" fill="url(#fade)"/><rect x="910" y="20" width="35" height="253" fill="url(#fade)" transform="rotate(180 927.5 146.5)"/>
+</g>
+</svg>'''
+marks=''.join(f'<path d="M{x} 253h28m30 9h12"/>' for x in range(450,1150,160))
+svg=svg.replace('MARKS',marks).replace('translateY(-2)','translateY(-2px)')
+# Keep the smaller character and every articulated part in the same coordinate
+# system. Locomotion, body pose, and scale are separate nested transforms.
+svg=svg.replace('<ellipse cx="752" cy="244" rx="58" ry="5" fill="#becbd6" opacity=".25"/>', '''<g class="travel"><ellipse class="contactShadow" cx="750" cy="244" rx="35" ry="3" fill="#a8bac8" opacity=".23"/>
+<g transform="translate(750 242) scale(.68) translate(-750 -242)"><g class="pose">''')
+svg=svg.replace('<rect x="510" y="20" width="35"', '</g></g></g><rect x="510" y="20" width="35"')
+cycle='''
+.travel,.pose{animation:none;transform:none}.contactShadow{animation:none;transform:none;opacity:.2}
+.body{animation:gentleBob .9s ease-in-out infinite}.nearFoot{animation:walkStep 1.8s linear infinite}.farFoot{animation:walkStep 1.8s linear -.9s infinite}.wing{animation:gentleWing 1.8s ease-in-out infinite}.scarf{animation:gentleScarf 2.7s ease-in-out infinite}.marks{animation:steadyIce 18s linear infinite}
+@keyframes gentleBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-1.2px)}}
+@keyframes walkStep{0%{transform:translate(6px,0)}50%{transform:translate(-6px,0)}60%{transform:translate(-4.85px,-1.76px)}70%{transform:translate(-1.85px,-2.85px)}80%{transform:translate(1.85px,-2.85px)}90%{transform:translate(4.85px,-1.76px)}100%{transform:translate(6px,0)}}
+@keyframes gentleWing{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(4deg)}}
+@keyframes gentleScarf{0%,100%{transform:rotate(-1deg)}50%{transform:rotate(3deg)}}
+@keyframes steadyIce{to{transform:translateX(-160px)}}
+@media(prefers-reduced-motion:reduce){.body,.nearFoot,.farFoot,.wing,.scarf,.marks{animation:none}}
+'''
+svg=svg.replace('</style>',cycle+'</style>')
+ET.fromstring(svg)
+(root/'assets'/'profile-penguin.svg').write_text(svg,encoding='utf-8')
+print('Side-profile penguin and flat scrolling surface generated; SVG valid.')
