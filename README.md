@@ -1,17 +1,15 @@
-<p align="center">
-  <img src="./github-ready/assets/profile-banner.gif" alt="deniz-mn — Computer Engineering, semester 7. A cartoon penguin with a red scarf walks beside the introduction." width="960" />
-</p>
+<img align="right" src="./github-ready/assets/penguin-walking.gif" width="99" height="99" alt="A cartoon penguin walking with a red scarf and backpack" />
 
-<p align="center">
-  Seventh-semester Computer Engineering undergraduate
-</p>
+# deniz-mn
+
+Computer Engineering · Semester 7
+
+Learning, one step at a time.
+
+<br clear="all" />
 
 ---
 
 ### About
 
-I'm a seventh-semester Computer Engineering undergraduate with project experience across different areas of computing, including artificial intelligence and software development. I enjoy connecting ideas, exploring new problems, and turning what I learn into working projects.
-
-<p align="center">
-  <sub>Explore. Build. Understand.</sub>
-</p>
+I'm a Computer Engineering undergraduate with experience across intelligent systems, data science, programming languages, and software systems. I'm particularly interested in artificial intelligence and software engineering, while remaining curious about other areas of computing.
